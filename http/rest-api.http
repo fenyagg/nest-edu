@@ -1,0 +1,31 @@
+### Запрос всех айтемов
+GET http://localhost:3000/items
+
+### Создать айтем
+POST http://localhost:3000/items
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "name": "Item 3",
+  "description": "Item 3",
+  "qty": 1232
+}
+
+### Обновить айтем
+PUT http://localhost:3000/items/5eb3d3a88f49ea328061b16c
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "name": "0"
+}
+
+### Запросить 1 айтем
+GET http://localhost:3000/items/5eb3d3a88f49ea328061b16c
+
+### Удалить 1 айтем
+DELETE http://localhost:3000/items/5eb3d3a88f49ea328061b16c
+
